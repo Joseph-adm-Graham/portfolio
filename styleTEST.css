@@ -214,18 +214,6 @@ header {
     max-width: 65%;
     margin-top: 130px;
   }
-  
-  #bubble {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -160px;
-    margin-top: -60px;
-    z-index: 1;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-  }
 
   #intro {
     margin: 20px;
@@ -356,4 +344,84 @@ button {
 button:hover {
   color: #9bc542; 
   border-color: #9bc542;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 600px){
+  body {
+    width: 100%;
+    /*background-color: rgb(255, 151, 151);*/
+  }
+
+  .container {
+    margin: 0px;
+    border: solid;
+  }
+
+  .two-firstColumn {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .two-secondColumn {
+    width: 0%;
+    margin-right: 0px;
+  }
+
+  #hellotext {
+    margin-top: 10px;
+  }
+
+  .bubble {
+    display: none;   
+  }
+
+  header {
+    margin-bottom: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 1220px) and (min-width: 600px){
+  body {
+    width: 100%;
+    /*background-color: rgb(151, 222, 255);*/
+  }
+
+  .two-firstColumn {
+    width: 50%;
+    margin-left: 10px;
+  }
+  .two-secondColumn {
+    width: 50%;
+    margin-right: 10px;
+  }
+
+  .one-column {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  h2 {
+    margin-left: 30px;
+  }
+
+  #hellotext {
+    margin-top: 3px;
+  }
+
+  .bubble {
+    margin-top: 20px;
+    width: 50%;
+    margin-right: 0px;    
+    border: solid; 
+  }
+
+  #top {
+    top: 90px;
+  }
+
+  #bottom {
+    top: 90px;
+  }
 }
